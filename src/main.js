@@ -8,6 +8,7 @@ import DemoElementList from '@/components/demo-element/demo-element-list'
 import DemoElementEdit from '@/components/demo-element/demo-element-edit'
 import DemoInterpolationExpression from '@/components/demo-interpolation-expression/demo-interpolation-expression'
 import DemoWatchMethodsComputed from '@/components/demo-watch-methods-computed/demo-watch-methods-computed'
+import DemoClassAndStyle from '@/components/demo-class-and-style/demo-class-and-style'
 
 Vue.use(VueRouter);
 Vue.config.productionTip = false
@@ -43,6 +44,10 @@ const router = new VueRouter({
             path: '/demo-watch-methods-computed',
             name: "DemoWatchMethodsComputed",
             component: DemoWatchMethodsComputed
+        }, {
+            path: '/demo-class-and-style',
+            name: 'DemoClassAndStyle',
+            component: DemoClassAndStyle
         }
     ]
 })

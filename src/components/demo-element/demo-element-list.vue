@@ -10,12 +10,15 @@
         <el-table-column prop="membership" label="是否会员"></el-table-column>
         <el-table-column label="最喜欢的颜色">
             <template slot-scope="scope">
-                <div v-show="scope.row.favorite_colors.length>2" v-for="(item, index) in scope.row.favorite_colors"
-                     :key="index">
-                    <p>
-                        <span>{{ item }}</span>
-                    </p>
+                <div v-if="scope.row.favorite_colors.length>2">
+                    <div v-for="(item, index) in scope.row.favorite_colors"
+                         :key="index">
+                        <p>
+                            <span>{{index}},{{ item }}</span>
+                        </p>
+                    </div>
                 </div>
+
             </template>
         </el-table-column>
         <el-table-column prop="gender" label="性别"></el-table-column>
@@ -68,7 +71,7 @@
             handleAll(msg) {
                 alert(msg);
             },
-            handleDemo(msg){
+            handleDemo(msg) {
                 alert(msg)
             }
         }
