@@ -49,7 +49,6 @@
         methods: {
             getUserList() {
                 // this.$axios.get("/shared/user.json").then(result => {
-                //     console.log('发送请求', result);
                 //     this.test = result.data.data_list;
                 // });
                 this.test = response.data_list;

@@ -2,7 +2,7 @@
     <div class="hello">
         <h1>Top Component</h1>
         <router-link to="/demo-interpolation-expression">interpolation expression demo</router-link><br>
-        <router-link to="/demo-methods-computed-watch">methods computed and watch demo</router-link><br>
+        <router-link to="/demo-watch-methods-computed">methods computed and watch demo</router-link><br>
         <router-link to="/demo-props">props demo</router-link><br>
         <router-link to="/demo-emit-and-listen">emit and listen demo</router-link><br>
         <router-link to="/demo-element-list">element ui demo</router-link>
