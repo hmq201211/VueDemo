@@ -4,7 +4,17 @@
 
 <script>
     export default {
-        props: ['msg']
+        props: {
+
+            msg: {
+                type: String,
+                required: false,
+                default: 'World',
+                validator: function (value) {
+                    return value.length >= 5;
+                }
+            }
+        }
     }
 </script>
 

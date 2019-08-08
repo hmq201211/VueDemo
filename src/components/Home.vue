@@ -1,17 +1,25 @@
 <template>
     <div class="hello">
+        <h3>{{$store.state.count}}</h3>
         <h1>Top Component</h1>
-        <router-link to="/demo-interpolation-expression">interpolation expression demo</router-link><br><br>
+        <router-link to="/demo-interpolation-expression" @click.native="nativeMethod">interpolation expression demo</router-link><br><br>
         <router-link to="/demo-watch-methods-computed">methods computed and watch demo</router-link><br><br>
         <router-link to="/demo-props">props demo</router-link><br><br>
         <router-link to="/demo-emit-and-listen">emit and listen demo</router-link><br><br>
         <router-link to="/demo-class-and-style">class and style demo</router-link><br><br>
         <router-link to="/demo-element-list">element ui demo</router-link><br><br>
+        <router-link to="/demo-vuex">vuex demo</router-link><br><br>
     </div>
-</template>
+</template>`
 
 <script>
-    export default {}
+    export default {
+        methods:{
+            nativeMethod:function () {
+                alert(123);
+            }
+        }
+    }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
