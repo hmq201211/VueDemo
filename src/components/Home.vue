@@ -7,9 +7,9 @@
         <router-link to="/demo-props">props demo</router-link><br><br>
         <router-link to="/demo-emit-and-listen">emit and listen demo</router-link><br><br>
         <router-link to="/demo-class-and-style">class and style demo</router-link><br><br>
-        <router-link to="/demo-element-list">element ui demo</router-link>//.stop 可以用来阻止事件的扩散, .prevent 可以截取事件的原生处理方法<br><br>
+        <router-link to="/demo-element-list">element ui demo</router-link>//.stop 可以用来阻止事件的扩散, .prevent 可以截取事件的原生处理方法, 还用到了keep-alive来缓存视图<br><br>
         <router-link to="/demo-vuex">vuex demo</router-link><br><br>
-        <router-link to="/demo-slot">slot demo</router-link><br><br>
+        <router-link to="/demo-slot">slot demo</router-link>//这里用到了 component :is 来进行动态绑定视图<br><br>
         ---------------------------------------------------------------------------------------------------
     </div>
 </template>`
