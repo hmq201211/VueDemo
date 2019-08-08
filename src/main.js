@@ -11,6 +11,7 @@ import DemoInterpolationExpression from '@/components/demo-interpolation-express
 import DemoWatchMethodsComputed from '@/components/demo-watch-methods-computed/demo-watch-methods-computed'
 import DemoClassAndStyle from '@/components/demo-class-and-style/demo-class-and-style'
 import DemoVuex from '@/components/demo-vuex/demo-vue'
+import DemoSlot from '@/components/demo-slot/demo-slot'
 
 Vue.use(VueRouter);
 Vue.config.productionTip = false
@@ -55,6 +56,11 @@ const router = new VueRouter({
             path: '/demo-vuex',
             name: 'DemoVuex',
             component: DemoVuex
+        }
+        , {
+            path: '/demo-slot',
+            name: 'DemoSlot',
+            component: DemoSlot
         }
     ]
 })

@@ -9,6 +9,7 @@
         <router-link to="/demo-class-and-style">class and style demo</router-link><br><br>
         <router-link to="/demo-element-list">element ui demo</router-link><br><br>
         <router-link to="/demo-vuex">vuex demo</router-link><br><br>
+        <router-link to="/demo-slot">slot demo</router-link><br><br>
     </div>
 </template>`
 
