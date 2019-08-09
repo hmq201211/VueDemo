@@ -1,6 +1,6 @@
 <template>
     <div>
-        相同点: 都能用来更新数据
+        相同点: 都能用来更新数据<br><br>
         相异点: watch 跟 computed 是有缓存机制, 如果缓存不变化, 其方法不会被调用
                 而methods则是每次都会调用
                 computed比较好, 如果都能用的前提下
